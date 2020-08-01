@@ -5,4 +5,4 @@ var e,t=arguments[3];function n(e){return(n="function"==typeof Symbol&&"symbol"=
 },{}],"QvaY":[function(require,module,exports) {
 "use strict";var e=t(require("marked"));function t(e){return e&&e.__esModule?e:{default:e}}var r=document.querySelector("#markdown-input"),u=document.querySelector(".markdown-output");r.addEventListener("input",function(t){u.innerHTML=(0,e.default)(t.target.value)});
 },{"marked":"F7mU"}]},{},["QvaY"], null)
-//# sourceMappingURL=/js.3613de53.js.map
+//# sourceMappingURL=js.3613de53.js.map
