@@ -1,0 +1,26 @@
+:root {
+  --dark-color: #353b48;
+  --main-color-light: #89fa77;
+  --main-color: #4cd137;
+  // --main-color-dark: #2c6b22;
+  --light-color: #cecfd1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: darken($color: #000000, $amount: 0);
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}

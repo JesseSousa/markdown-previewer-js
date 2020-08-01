@@ -1,0 +1,20 @@
+#title {
+  height: 15%;
+}
+
+.markdown {
+  display: flex;
+  height: 75%;
+
+  &-input {
+    flex: 1;
+  }
+
+  &-output {
+    flex: 1;
+  }
+}
+
+#footer {
+  height: 10%;
+}
