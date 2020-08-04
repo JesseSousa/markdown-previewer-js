@@ -2728,10 +2728,15 @@ var _marked = _interopRequireDefault(require("marked"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var MdInput = document.querySelector('#markdown-input');
-var MdOutput = document.querySelector('.markdown-output');
-MdInput.addEventListener('input', function (e) {
-  MdOutput.innerHTML = (0, _marked.default)(e.target.value);
+var mdInput = document.querySelector('#markdown-input');
+var mdOutput = document.querySelector('.markdown-output');
+var clipboardButton = document.querySelector('#copy-to-clipboard');
+mdInput.addEventListener('input', function (e) {
+  mdOutput.innerHTML = (0, _marked.default)(e.target.value);
+});
+clipboardButton.addEventListener('click', function () {
+  mdInput.select();
+  document.execCommand('copy');
 });
 },{"marked":"../node_modules/marked/lib/marked.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -2761,7 +2766,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36923" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33783" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
