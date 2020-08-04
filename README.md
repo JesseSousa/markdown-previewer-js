@@ -2,6 +2,6 @@
 
 A Simple Markdown Previewer made with vanilla js.
 
-- Usage
+## Usage
 
 Write Markdown code on the left panel and see the changes on the right panel
