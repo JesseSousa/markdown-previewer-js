@@ -1,8 +1,14 @@
 import marked from 'marked';
 
-const MdInput = document.querySelector('#markdown-input');
-const MdOutput = document.querySelector('.markdown-output');
+const mdInput = document.querySelector('#markdown-input');
+const mdOutput = document.querySelector('.markdown-output');
+const clipboardButton = document.querySelector('#copy-to-clipboard');
 
-MdInput.addEventListener('input', (e) => {
-  MdOutput.innerHTML = marked(e.target.value);
+mdInput.addEventListener('input', (e) => {
+  mdOutput.innerHTML = marked(e.target.value);
+});
+
+clipboardButton.addEventListener('click', () => {
+  mdInput.select();
+  document.execCommand('copy');
 });
